@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notification</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="img/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <script defer src="main.js"></script>
+  </head>
+  <body
+    class="antialiased min-h-screen bg-[#f7fafd] flex justify-center items-center"
+  >
+    <section class="border w-[550px] h-full md:h-[612px] bg-white md:rounded-xl px-5 pt-5">
+      <header class="flex justify-center items-center text-center">
+        <div class="inline-flex justify-center items-center text-center gap-2">
+          <h3 class="text-xl md:text-lg font-bold">Notifications</h3>
+          <p
+            class="px-2.5 py-0 text-sm md:text-xs text-white text-center font-medium bg-blue-950 rounded-md messages"
+          >
+            3
+          </p>
+        </div>
+        <button
+          class="ml-auto text-sm md:text-xs text-[#939dae] focus:outline-none focus:text-[#0a317b] transition duration-1000 mark"
+        >
+          Mark all as read
+        </button>
+      </header>
+      <main class="pt-5 flex flex-col justify-center items-center gap-2">
+        <div
+          class="flex justify-center items-center gap-2.5 w-full py-2 px-5 md:px-0 rounded-md bg-[#f7fafd] hover:outline hover:outline-1 hover:outline-gray-100 transition duration-1000 removal"
+        >
+          <img
+            class="w-10 md:w-9 h-10 md:h-9 object-contain"
+            src="img/avatar-mark-webber.webp"
+            alt="avatar-mark-webber"
+          />
+          <div>
+            <div class="inline-flex justify-center items-center gap-1">
+              <h3 class="text-xs font-bold">
+                Mark Webber
+                <span class="pl-1 text-[#939dae] font-medium"
+                  >reacted to your recent post</span
+                >
+                <a
+                  href="#"
+                  class="pl-1 text-[#5e6778] focus:outline-none focus:text-[#0a317b] transition duration-1000"
+                  >My first tournament today!</a
+                >
+              </h3>
+              <div class="w-1.5 h-1.5 rounded-full bg-[#f65351] invisible  md:visible blink"></div>
+            </div>
+            <p class="text-xs text-[#939dae] font-medium">1m ago</p>
+          </div>
+        </div>
+        <div
+          class="flex justify-start items-center gap-2.5 w-full py-2 px-[21px] rounded-md bg-[#f7fafd] hover:outline hover:outline-1 hover:outline-gray-100 transition duration-1000 removal"
+        >
+          <img
+            class="w-9 h-9 object-contain"
+            src="img/avatar-angela-gray.webp"
+            alt="avatar-angela-gray"
+          />
+          <div>
+            <div class="inline-flex justify-center items-center gap-1">
+              <h3 class="text-xs font-bold">
+                Angela Gray<span class="pl-1 text-[#939dae] font-medium"
+                  >followed you</span
+                >
+              </h3>
+              <div class="w-1.5 h-1.5 rounded-full bg-[#f65351] invisible  md:visible blink  "></div>
+            </div>
+            <p class="text-xs text-[#939dae] font-medium">5m ago</p>
+          </div>
+        </div>
+        <div
+          class="flex justify-start items-center gap-2.5 w-full py-2 px-[18px] rounded-md bg-[#f7fafd] hover:outline hover:outline-1 hover:outline-gray-100 transition duration-1000 removal"
+        >
+          <img
+            class="w-9 h-9 object-contain"
+            src="img/avatar-jacob-thompson.webp"
+            alt="avatar-jacob-thompson"
+          />
+          <div>
+            <div class="inline-flex justify-center items-center gap-1">
+              <h3 class="text-xs font-bold">
+                Jacob Thompson
+                <span class="pl-1 text-[#939dae] font-medium"
+                  >has joined your group</span
+                >
+                <a
+                  href="#"
+                  class="pl-1 text-[#0a317b] focus:outline-none focus:text-[#062a6e] transition duration-1000"
+                  >Chess Club</a
+                >
+              </h3>
+              <div class="w-1.5 h-1.5 rounded-full bg-[#f65351] invisible  md:visible blink"></div>
+            </div>
+            <p class="text-xs text-[#939dae] font-medium">1day ago</p>
+          </div>
+        </div>
+        <div class="flex gap-2.5 w-full py-2.5 px-[18px] transition-all duration-1000">
+          <img
+            class="w-9 h-9 object-contain"
+            src="img/avatar-rizky-hasanuddin.webp"
+            alt="avatar-rizky-hasanuddin"
+          />
+          <div class="flex flex-col justify-start items-start gap-1">
+            <h3 class="text-xs font-bold">
+              Rizky Hasanuddin
+              <span class="pl-1 text-[#939dae] font-medium"
+                >sent you a private message</span
+              >
+            </h3>
+            <p class="text-xs text-[#939dae] font-medium">5 days ago</p>
+            <div class="border rounded-sm mt-1.5 p-3.5 hover:bg-[#f7fafd] hover:border-[#f7fafd] hover: transition-all duration-1000">
+              <p class="text-[#939dae] font-medium text-xs">
+                Hello, thanks for setting up the Chess Club. I've been a member
+                for a few weeks now and I'm already having lots of fun and
+                improving my game.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-2.5 w-full py-2.5 px-[18px]">
+          <img
+            class="w-9 h-9 object-contain"
+            src="img/avatar-kimberly-smith.webp"
+            alt="avatar-kimberly-smith"
+          />
+          <div class="flex flex-col justify-start items-start gap-1">
+            <h3 class="text-xs font-bold">
+              Kimberly Smith
+              <span class="pl-1 text-[#939dae] font-medium"
+                >commented on your picture</span
+              >
+            </h3>
+            <p class="text-xs text-[#939dae] font-medium">1 week ago</p>
+          </div>
+          <img
+            class="w-9 h-9 object-contain ml-auto focus:outline-none hover:outline-2 hover:outline hover:rounded-lg hover:outline-gray-300 transition duration-1000"
+            src="img/image-chess.webp"
+            alt="image-chess"
+          />
+        </div>
+        <div class="flex gap-2.5 w-full py-2.5 px-[18px]">
+          <img
+            class="w-9 h-9 object-contain"
+            src="img/avatar-nathan-peterson.webp"
+            alt="avatar-nathan-peterson"
+          />
+          <div class="flex flex-col justify-start items-start gap-1">
+            <h3 class="text-xs font-bold">
+              Nathan Peterson
+              <span class="pl-1 text-[#939dae] font-medium"
+                >reacted to your recent post</span
+              >
+              <span class="pl-1 text-[#5e6778]"
+                >5 end-game strategies to increase your win rate</span
+              >
+            </h3>
+            <p class="text-xs text-[#939dae] font-medium">2 weeks ago</p>
+          </div>
+        </div>
+        <div class="flex gap-2.5 w-full py-2.5 px-[18px]">
+          <img
+            class="w-9 h-9 object-contain"
+            src="img/avatar-anna-kim.webp"
+            alt="avatar-anna-kim"
+          />
+          <div class="flex flex-col justify-start items-start gap-1">
+            <h3 class="text-xs font-bold">
+              Anna Kim
+              <span class="pl-1 text-[#939dae] font-medium"
+                >left the group</span
+              >
+              <a
+                href="#"
+                class="pl-1 text-[#0a317b] focus:outline-none focus:text-[#0d3172] duration-1000 transition"
+                >Chess Club</a
+              >
+            </h3>
+            <p class="text-xs text-[#939dae] font-medium">2 weeks ago</p>
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>
